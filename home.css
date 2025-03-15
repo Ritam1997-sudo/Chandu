@@ -303,10 +303,12 @@ header nav ul li a {
 }
 .google-form-container {
     display: flex;
+    flex-direction: column; /* Stack items vertically */
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 500px; /* Adjust height as needed */
+    text-align: center; /* Center text */
 }
 footer {
   background-color: #263238;
