@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Resizer to 100KB - FixMyKb</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resize-pic-to-100kb.css">
+  <body>
+  <header>
+    <div class="logo">
+      <span class="logo-f-circle">F</span>
+      <span class="logo-ix">ix</span>
+      <span class="logo-my">My</span>
+      <span class="logo-kb">Kb</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="tool-section">
+      <h1>Image Resizer to 100KB</h1>
+      <p>Resize and compress your image to 100KB or less with automatic or custom options.</p>
+
+      <div class="drop-zone" id="drop-zone">Drop Your Image Here or Click to Upload</div>
+      <input type="file" id="file-input" accept="image/jpeg,image/png" style="display: none;">
+      <div class="file-info" id="file-info">File: -- | Size: --</div>
+
+      <div class="controls">
+        <input type="number" id="width" placeholder="Width (px)" min="1">
+        <input type="number" id="height" placeholder="Height (px)" min="1">
+        <label><input type="checkbox" id="aspect-ratio" checked> Lock Aspect Ratio</label>
+        <select id="presets">
+          <option value="">Select Preset</option>
+          <option value="200x200">200x200 (Square)</option>
+          <option value="300x150">300x150 (Wide)</option>
+          <option value="150x200">150x200 (Tall)</option>
+          <option value="100x100">100x100 (Small Square)</option>
+        </select>
+        <button id="auto-resize-btn">Resize to 100KB</button>
+        <button id="custom-resize-btn">Custom Resize Image</button>
+      </div>
+
+      <div class="preview-container">
+        <div>
+          <p>Original</p>
+          <div id="original-preview"></div>
+          <div class="image-properties" id="original-props">Width: <span id="originalWidth">0</span>px, Height: <span id="originalHeight">0</span>px, Size: <span id="originalSize">0</span>KB</div>
+        </div>
+        <div>
+          <p>Resized</p>
+          <div id="resized-preview"></div>
+          <div class="image-properties" id="resized-props">Width: <span id="resizedWidth">0</span>px, Height: <span id="resizedHeight">0</span>px, Size: <span id="resizedSize">0</span>KB</div>
+        </div>
+      </div>
+
+      <div class="action-buttons">
+        <button id="download-btn" disabled>Download</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+    </section>
+
+    <!-- Relevant Tools Section -->
+    <section class="relevant-tools">
+      <h2>Explore More Tools</h2>
+      <div class="tools-list">
+        <button data-href="resize-picture-to-20kb.html">Resize to 20KB</button>
+        <button data-href="resize-picture-to-50kb.html">Resize to 50KB</button>
+        <button data-href="image-compressor.html">Image Compressor</button>
+        <button data-href="png-to-jpg.html">PNG to JPG Converter</button>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+      <h2>How to Resize Images to 100KB</h2>
+      <div class="blog-content">
+        <p>Resizing images to 100KB is perfect for scenarios requiring higher quality within a reasonable file size, such as portfolio uploads or detailed forms. Learn how to use FixMyKb’s Image Resizer to 100KB here.</p>
+        <h3>Why Resize to 100KB?</h3>
+        <p>At 100KB, images maintain excellent detail while staying manageable for web use, ideal for applications needing more than basic thumbnails.</p>
+        <h3>Steps to Use the Tool</h3>
+        <ol>
+          <li><strong>Upload Your Image:</strong> Drag your JPG or PNG into the drop zone or click to select.</li>
+          <li><strong>Auto or Custom Resize:</strong> Click "Resize to 100KB" for a 400px-width default, or enter custom dimensions and press "Custom Resize Image."</li>
+          <li><strong>Review the Output:</strong> Ensure the resized image is ≤100KB in the preview.</li>
+          <li><strong>Download:</strong> Grab your resized JPG with the "Download" button.</li>
+        </ol>
+        <p><strong>Pro Tip:</strong> Use higher initial dimensions for custom resizing to leverage the 100KB limit fully.</p>
+        <h3>Conclusion</h3>
+        <p>FixMyKb’s Image Resizer to 100KB simplifies creating high-quality, compact images. Try it today!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="logo">
+          <span class="logo-f-circle">F</span>
+          <span class="logo-ix">ix</span>
+          <span class="logo-my">My</span>
+          <span class="logo-kb">Kb</span>
+        </div>
+        <p>Your all-in-one solution for powerful tools.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="ai-disclaimer.html">AI Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <div class="copyright">
+      © 2025 FixMyKb. All rights reserved.
+    </div>
+  </footer>
+      <script src="resize-pic-to-100kb.js"></script>
+    </body>
+</html>
