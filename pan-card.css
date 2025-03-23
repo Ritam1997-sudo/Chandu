@@ -193,6 +193,48 @@ header nav ul li a {
   margin-top: 0.5rem;
 }
 
+/* Relevant Tools Section */
+.relevant-tools {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.relevant-tools h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #006064;
+  margin-bottom: 1.5rem;
+}
+
+.relevant-tools .tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.relevant-tools button {
+  background: linear-gradient(135deg, #006064, #0288d1);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.relevant-tools button:hover {
+  transform: scale(1.05);
+}
+
 /* Manual Section */
 .manual-section {
   max-width: 1000px;
