@@ -39,8 +39,10 @@
 
 <!-- Load the stylesheet with media swap for FOUC prevention -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" media="all">
-<link rel="preload" href="2x2-picture-size-converter.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="2x2-picture-size-converter.css"></noscript>
+<!-- No JS-based rel switching -->
+<link rel="preload" href="2x2-picture-size-converter.css" as="style">
+<link rel="stylesheet" href="2x2-picture-size-converter.css">
+
   
 </head>
 <body>
