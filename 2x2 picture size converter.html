@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resize Image to 2x2 Inches - FixMyKb</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="2x2 picture size converter.css">  
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span class="logo-f-circle">F</span>
+      <span class="logo-ix">ix</span>
+      <span class="logo-my">My</span>
+      <span class="logo-kb">Kb</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Tool Section -->
+    <section class="tool-section">
+      <h1>Resize Image to 2x2 Inches</h1>
+      <p>Convert any image to a 2 inch x 2 inch square with the best quality output in JPEG format.</p>
+      <div class="upload-area" id="upload-area">
+        <p>Drag & Drop your image here, or click to upload (JPEG/PNG only)</p>
+        <input type="file" id="file-input" accept="image/jpeg,image/png" style="display: none;">
+      </div>
+      <div class="controls">
+        <label>Width: <input type="text" value="2 inch" disabled></label>
+        <label>Height: <input type="text" value="2 inch" disabled></label>
+        <button class="button" id="resize-btn" disabled>Resize Image</button>
+        <button class="button" id="reset-btn">Reset</button>
+      </div>
+      <div class="preview-section">
+        <div class="preview" id="original-preview">
+          <h3>Original</h3>
+          <img id="original-img" src="" alt="Original Image">
+          <p id="original-props"></p>
+        </div>
+        <div class="preview" id="resized-preview">
+          <h3>Resized</h3>
+          <img id="resized-img" src="" alt="Resized Image">
+          <p id="resized-props"></p>
+          <button class="button" id="download-btn" style="display: none;">Download</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manual Section -->
+    <section class="manual-section">
+      <h2>How to Use This Tool</h2>
+      <ol>
+        <li><strong>Upload Your Image:</strong> Click the upload area or drag and drop your image file (JPEG or PNG). Only these formats are accepted for processing.</li>
+        <li><strong>Check Dimensions:</strong> The width and height are fixed at 2 inch x 2 inch for a perfect square output, ensuring the best quality.</li>
+        <li><strong>Resize the Image:</strong> Click "Resize Image" to process your upload. The tool resizes and crops (if needed) to a 2 inch x 2 inch square and outputs it as a high-quality JPEG.</li>
+        <li><strong>Preview Results:</strong> View the original and resized images side-by-side. Check the properties (dimensions in inches, file size in KB) below each preview to confirm the 2 inch x 2 inch output.</li>
+        <li><strong>Download:</strong> If satisfied, click "Download" to save the resized JPEG file, named "image-2x2-best-quality.jpg".</li>
+        <li><strong>Reset (Optional):</strong> Click "Reset" to clear all inputs, previews, and start over with a new image.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="logo">
+          <span class="logo-f-circle">F</span>
+          <span class="logo-ix">ix</span>
+          <span class="logo-my">My</span>
+          <span class="logo-kb">Kb</span>
+        </div>
+        <p>Your all-in-one solution for powerful tools.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="ai-disclaimer.html">AI Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <div class="copyright">
+      © 2025 FixMyKb. All rights reserved.
+    </div>
+  </footer>
+<script src="2x2 picture size converter.js" defer></script>
+</body>
+</html>
